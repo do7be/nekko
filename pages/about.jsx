@@ -2,6 +2,6 @@ import Layout from '../components/Layout'
 
 export default () => (
   <Layout>
-    <p>This is the about page</p>
+    <p>実家に来る野良猫を貼るサービスです</p>
   </Layout>
 )

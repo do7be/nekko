@@ -3,10 +3,23 @@ import { Link } from '../routes'
 
 const Index = () => (
   <Layout>
-    <p>Hello Next.js</p>
-    <Link route='nekko' params={{ id: 1 }}>
-      <a>Nekko 1</a>
-    </Link>
+    <ul>
+      <li>
+        <Link route='nekko' params={{ id: 3 }}>
+          <a>Nekko 3</a>
+        </Link>
+      </li>
+      <li>
+        <Link route='nekko' params={{ id: 2 }}>
+          <a>Nekko 2</a>
+        </Link>
+      </li>
+      <li>
+        <Link route='nekko' params={{ id: 1 }}>
+          <a>Nekko 1</a>
+        </Link>
+      </li>
+    </ul>
   </Layout>
 )
 
