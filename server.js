@@ -11,7 +11,7 @@ app.prepare().then(() => {
     const parsedUrl = parse(req.url, true);
     const { pathname } = parsedUrl
 
-    if (pathname === '/sw.js' || pathname === '/OneSignalSDKWorker.js' || pathname === '/OneSignalSDKUpdaterWorker.js') {
+    if (pathname === '/manifest.json' || pathname === '/sw.js' || pathname === '/OneSignalSDKWorker.js' || pathname === '/OneSignalSDKUpdaterWorker.js') {
       res.setHeader('content-type', 'text/javascript')
       createReadStream(`./static${pathname}`).pipe(res)
     } else {
