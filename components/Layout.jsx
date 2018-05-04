@@ -11,6 +11,7 @@ const Layout = (props) => (
   <div style={layoutStyle}>
     <Head>
       <link rel="apple-touch-icon" href="/static/192x192.png" sizes="192x192"/>
+      <link rel="manifest" href="/manifest2.json"/>
       <link rel="manifest" href="/manifest.json"/>
       <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
       <script dangerouslySetInnerHTML={{__html: `
