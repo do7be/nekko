@@ -5,7 +5,7 @@ import { Link } from '../routes'
 class Index extends React.Component {
   componentDidMount () {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/static/serviceWorker.js')
+      navigator.serviceWorker.register('/sw.js')
       .then(function() {
         console.log('Service Worker Registered')
       })
