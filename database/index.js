@@ -1,17 +1,17 @@
 const config = [
   {
     id: 1,
-    img: require('../images/1.jpg'),
+    img: '/static/1.jpg',
     description: 'よく来るやつ'
   },
   {
     id: 2,
-    img: require('../images/2.jpg'),
+    img: '/static/2.jpg',
     description: 'にゃーん'
   },
   {
     id: 3,
-    img: require('../images/3.jpg'),
+    img: '/static/3.jpg',
     description: 'ごろごろ'
   }
 ]

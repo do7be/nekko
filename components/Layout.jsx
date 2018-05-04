@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Header from './Header'
 
 const layoutStyle = {
@@ -8,6 +9,9 @@ const layoutStyle = {
 
 const Layout = (props) => (
   <div style={layoutStyle}>
+    <Head>
+      <link rel="manifest" href="/static/manifest.json"/>
+    </Head>
     <Header/>
     {props.children}
   </div>
