@@ -18,6 +18,10 @@ const Layout = (props) => (
         OneSignal.push(function() {
           OneSignal.init({
             appId: "f64b1892-dc6f-4b3e-8fb2-6268db7128f0",
+            autoRegister: false,
+            notifyButton: {
+              enable: true
+            }
           })
         });
       `}}/>
